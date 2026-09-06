@@ -38,7 +38,7 @@
     .nexus-page {
       display: flex;
       width: 100%;
-      height: clamp(520px, calc(100vh - 120px), 760px);
+      height: 520px;
       min-height: 520px;
       gap: 24px;
       align-items: stretch;
@@ -51,7 +51,8 @@
 
     .devices-sidebar {
       width: 270px;
-      height: 100%;
+      height: 520px;
+      max-height: 520px;
       flex-shrink: 0;
       overflow-y: auto;
       overflow-x: hidden;
@@ -119,7 +120,7 @@
     .device-content {
       flex: 1 1 auto;
       min-width: 0;
-      height: 100%;
+      height: 520px;
       min-height: 0;
       overflow-y: auto;
       overflow-x: hidden;
@@ -331,8 +332,8 @@
 
       .devices-sidebar {
         width: 100%;
-        height: 240px;
-        max-height: 240px;
+        height: 300px;
+        max-height: 300px;
         border-right: 0;
         border-bottom: 0;
       }
