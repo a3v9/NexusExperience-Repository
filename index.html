@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Experience Repository</title>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
@@ -33,6 +34,16 @@
     main,
     aside {
       font-family: "Roboto", Arial, sans-serif !important;
+    }
+
+    .repository-header {
+      padding: 18px 24px;
+      background: #167c80;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.3;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.18);
     }
 
     .nexus-page {
@@ -394,6 +405,8 @@
 
 <body>
 
+  <header class="repository-header">Nexus Experience Repository</header>
+
   <div class="nexus-page">
 
     <aside class="devices-sidebar">
@@ -444,27 +457,19 @@
   <script>
     const devices = {
       p1lite: {
-        name: 'Galaxy Tab 7" Wi-Fi',
-        codename: 'p1lite',
+        name: 'CyanogenMod',
+        codename: 'P1010',
         sections: [
           {
-            name: 'ICS (4.0)',
+            name: '',
             builds: [{
-            name: 'NXPwip1_ICS-p1lite-nandroid',
-            details: 'Android 4.0.x · NANDROID build · Not booting - Super Experimental Build',
+            name: 'WIP 1-superexperimental',
+            details: 'Android 4.0.x · NANDROID build · Super experimental',
             status: 'critical',
-            warning: 'Critical bootloop condition: freezes on the Galaxy Tab boot logo, leaves the LED on, and prevents recovery access until the device is reflashed. Not booting - Super Experimental Build. Follow the installation instructions before attempting to flash.',
+            warning: 'Critical bootloop condition: freezes on the Galaxy Tab boot logo, leaves the LED on, and prevents recovery access until the device is reflashed. Super-experimental, non-booting build. Follow the installation instructions before attempting to flash.',
             installLink: 'https://xdaforums.com/t/4-0-x-4-4-x-port-dev-p1010-nexus-experience-rom-by-neptune-and-ozgur.4790698/post-90617113',
             link: 'https://mega.nz/folder/BcwlzK5A#D5jH7j7MSYXYNwOd2VWuPA'
           }]
-          },
-          {
-            name: 'Jellybean (4.1/4.2)',
-            builds: []
-          },
-          {
-            name: 'KitKat (4.4)',
-            builds: []
           }
         ]
       },
